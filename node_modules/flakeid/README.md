@@ -44,6 +44,6 @@ timeOffset : (Defaults to 0) Time offset will be  subtracted from current time t
 # Method
 gen : Method to generate id from FlakeId instance.
 
-
+------
 As js have 53bit integer precision, Flake Id uses a smart solution by Dan Vanderkam (http://www.danvk.org/hex2dec.html) to convert hex to decimal without loosing precision. 
 *Source code for converting hex to decimal is taken from http://www.danvk.org/hex2dec.html which have APACHE LICENCE*
