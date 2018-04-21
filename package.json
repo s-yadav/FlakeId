@@ -2,7 +2,7 @@
   "name": "flakeid",
   "version": "0.2.0",
   "description": "Time based 64-bit unique id generator, inspired by Twitter id (snowflake)",
-  "main": "flakeid.js",
+  "main": "lib/flakeid.js",
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-loader": "^7.1.4",
