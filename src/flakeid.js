@@ -43,13 +43,6 @@ export default class FlakeId {
       id = parseInt(bid.substring(i - 4, i), 2).toString(16) + id;
     }
 
-    const a = {
-      b: c,
-      d: 2
-    }
-
-    //const d = {...a};
-
     return hexToDec(id);
   }
 }
