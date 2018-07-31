@@ -32,7 +32,7 @@ Create a instance of flake as shown above which will be used to generate flake i
 Id generation
 ```js
 var id1 = flake.gen(); \\returns something like 285124269753503744
-var id2 = falke.gen(); \\returns something like 285124417543999488
+var id2 = flake.gen(); \\returns something like 285124417543999488
 ```
 
 # Options
