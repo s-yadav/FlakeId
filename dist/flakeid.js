@@ -153,7 +153,8 @@
         for (var i = bid.length; i >= 0; i -= 4) {
           id = parseInt(bid.substring(i - 4, i), 2).toString(16) + id;
         }
-  return hexToDec(id);
+
+        return hexToDec(id);
       }
     }]);
     return FlakeId;
