@@ -39,7 +39,7 @@ export default class FlakeId {
     const bid = bTime + bMid + bSeq;
     let id = "";
 
-    for (let i = bid.length; i >= 0; i -= 4) {
+    for (let i = bid.length; i > 0; i -= 4) {
       id = parseInt(bid.substring(i - 4, i), 2).toString(16) + id;
     }
 
