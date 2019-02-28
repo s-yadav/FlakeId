@@ -5,10 +5,10 @@ rollup({
   input: './src/flakeid.js',
   plugins: [babel({
     babelrc: false,
-    presets: [['env', {
+    presets: [['@babel/preset-env', {
       modules: false,
     }]],
-    plugins: ['external-helpers'],
+    plugins: ['@babel/plugin-external-helpers'],
   })]
   }).then(bundle => {
   return bundle.write({
