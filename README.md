@@ -13,16 +13,19 @@ npm install flakeid
 For Browser
 Include js file
 ```html
-<script src="flakeid.js"></script>
+<script src="https://unpkg.com/flakeid/dist/flakeid.min.js"></script>
 ```
 
 # Usage
 Initializtion
 ```js
-var FlakeId = require('flakeid'); /* on node js only */
+import FlakeId from 'flakeid';
+
+//or 
+const FlakeId = require('flakeid'); 
 
 //initiate flake
-var flake = new FlakeId({
+const flake = new FlakeId({
 	mid : 42, //optional, define machine id
     timeOffset : (2013-1970)*31536000*1000 //optional, define a offset time
 });
@@ -31,8 +34,8 @@ Create a instance of flake as shown above which will be used to generate flake i
 
 Id generation
 ```js
-var id1 = flake.gen(); \\returns something like 285124269753503744
-var id2 = flake.gen(); \\returns something like 285124417543999488
+const id1 = flake.gen(); \\returns something like 285124269753503744
+const id2 = flake.gen(); \\returns something like 285124417543999488
 ```
 
 # Options
