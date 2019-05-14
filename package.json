@@ -1,6 +1,6 @@
 {
   "name": "flakeid",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "description": "Time based 64-bit unique id generator, inspired by Twitter id (snowflake)",
   "main": "lib/flakeid.js",
   "module": "src/flakeid.js",

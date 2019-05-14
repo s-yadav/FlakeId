@@ -19,10 +19,7 @@ Include js file
 # Usage
 Initializtion
 ```js
-import FlakeId from 'flakeid';
-
-//or 
-const FlakeId = require('flakeid'); 
+const FlakeId = require('flakeid'); /* on node js only */
 
 //initiate flake
 const flake = new FlakeId({
