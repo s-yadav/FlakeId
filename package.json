@@ -1,6 +1,6 @@
 {
   "name": "flakeid",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "Time based 64-bit unique id generator, inspired by Twitter id (snowflake)",
   "main": "lib/flakeid.js",
   "module": "src/flakeid.js",
@@ -10,6 +10,7 @@
     "@babel/plugin-external-helpers": "^7.2.0",
     "@babel/plugin-transform-runtime": "^7.3.4",
     "@babel/preset-env": "^7.3.4",
+    "babel-plugin-add-module-exports": "^1.0.2",
     "rollup": "^1.3.2",
     "rollup-plugin-babel": "^4.3.2",
     "uglify-js": "^3.4.9"
@@ -41,6 +42,6 @@
   },
   "homepage": "https://github.com/s-yadav/FlakeId#readme",
   "dependencies": {
-    "babel-runtime": "^6.26.0"
+    "@babel/runtime": "^7.4.4"
   }
 }
