@@ -1,19 +1,19 @@
 {
   "name": "flakeid",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Time based 64-bit unique id generator, inspired by Twitter id (snowflake)",
   "main": "lib/flakeid.js",
   "module": "src/flakeid.js",
   "devDependencies": {
-    "@babel/cli": "^7.2.3",
-    "@babel/core": "^7.3.4",
-    "@babel/plugin-external-helpers": "^7.2.0",
-    "@babel/plugin-transform-runtime": "^7.3.4",
-    "@babel/preset-env": "^7.3.4",
-    "babel-plugin-add-module-exports": "^1.0.2",
-    "rollup": "^1.3.2",
-    "rollup-plugin-babel": "^4.3.2",
-    "uglify-js": "^3.4.9"
+    "@babel/cli": "^7.20.7",
+    "@babel/core": "^7.20.12",
+    "@babel/plugin-external-helpers": "^7.18.6",
+    "@babel/plugin-transform-runtime": "^7.19.6",
+    "@babel/preset-env": "^7.20.2",
+    "babel-plugin-add-module-exports": "^1.0.4",
+    "rollup": "^3.17.1",
+    "@rollup/plugin-buble": "^1.0.2",
+    "uglify-js": "^3.17.4"
   },
   "scripts": {
     "bundle": "npm run build-umd && npm run uglify && npm run compile",

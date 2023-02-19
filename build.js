@@ -1,14 +1,10 @@
 const rollup = require('rollup').rollup;
-const babel = require('rollup-plugin-babel');
+const buble = require('@rollup/plugin-buble');
 
 rollup({
   input: './src/flakeid.js',
-  plugins: [babel({
-    babelrc: false,
-    presets: [['@babel/preset-env', {
-      modules: false,
-    }]],
-    plugins: ['@babel/plugin-external-helpers'],
+  plugins: [buble({
+    objectAssign: true,
   })]
   }).then(bundle => {
   return bundle.write({

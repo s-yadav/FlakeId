@@ -9,8 +9,7 @@ export default class FlakeId {
     this.lastTime = 0;
   }
   gen() {
-    const time = Date.now(),
-    bTime = (time - this.timeOffset).toString(2);
+    let time = Date.now();
 
     //get the sequence number
     if (this.lastTime == time) {
@@ -21,12 +20,17 @@ export default class FlakeId {
 
         //make system wait till time is been shifted by one millisecond
         while (Date.now() <= time) {}
+
+        // update time to next millisecond time
+        time = Date.now();
       }
     } else {
       this.seq = 0;
     }
 
     this.lastTime = time;
+
+    const bTime = (time - this.timeOffset).toString(2)
 
     let bSeq = this.seq.toString(2),
       bMid = this.mid.toString(2);
